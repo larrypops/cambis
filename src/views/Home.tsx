@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import type { Variants } from "motion/react";
 import { ArrowRight, CheckCircle, Shield, Zap, Sparkles, Building2, Home as HomeIcon, Construction, Bug, Paintbrush, Users, MapPin } from "lucide-react";
 import Link from "next/link";
 
@@ -73,7 +74,7 @@ const steps = [
   { id: "04", title: "Résultat", desc: "Satisfaction garantie" },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -83,7 +84,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import type { Variants } from "motion/react";
 import { CheckCircle2, Target, Eye, Heart, Users as UsersIcon } from "lucide-react";
 
 const values = [
@@ -12,7 +13,7 @@ const values = [
 ];
 
 export function About() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -20,7 +21,7 @@ export function About() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, scale: 0.95 },
     visible: { opacity: 1, scale: 1 },
   };

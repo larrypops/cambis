@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import type { Variants } from "motion/react";
 import { Phone, Mail, MapPin, MessageSquare, Send, CheckCircle } from "lucide-react";
 
 export function Contact() {
@@ -15,7 +16,7 @@ export function Contact() {
     }, 500);
   };
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -23,7 +24,7 @@ export function Contact() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0 },
   };
@@ -204,4 +205,3 @@ export function Contact() {
     </div>
   );
 }
-
